@@ -1,0 +1,14 @@
+{
+	"folders": [],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "BamaDizonSabulao_FinalProjectReport (1)",
+		"java.completion.filteredTypes": [
+			"com.sun.*",
+			"sun.*",
+			"jdk.*",
+			"org.graalvm.*",
+			"io.micrometer.shaded.*"
+		],
+		"java.debug.settings.onBuildFailureProceed": true
+	}
+}
