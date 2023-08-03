@@ -1,0 +1,105 @@
+@media (min-width: 768px) {
+    .loginBox {
+        width: 300px;
+    }
+}
+
+.leftBar {
+    width: 60%;
+    max-width: 250px;
+    height: 100dvh;
+    background-color: white;
+    box-shadow: 0vw 2vw 10vw rgb(3,3,3,0.1);
+    display: grid;
+}
+
+#logoContainer {
+    box-sizing: border-box;
+    width: 90%;
+    height: 8dvh;
+    margin: 0 auto;
+    display: flex;
+    color: #B0B0B0;
+    padding: 7%;
+}
+
+#logo {
+    width: 100%;
+    height: 7dvh;
+    object-fit: contain;
+}
+
+.navBar {
+    box-sizing: border-box;
+    height: 83dvh;
+    padding-top: 5dvh;
+}
+
+.navBox {
+    box-sizing: border-box;
+    width: 90%;
+    height: 12%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+    color: #B0B0B0;
+    display: flex;
+    border-radius: 7px;
+    padding: 7%;
+}
+
+#iconBox {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#labelBox {
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+}
+
+#iconBox i {
+    font-size: 1.8em;
+}
+
+#navLabel {
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navBox:hover {
+    background-color: #F5F5F5;
+}
+
+.navBox.active {
+    background-color: #00A885;
+    color: white;
+}
+
+.exitContainer {
+    box-sizing: border-box;
+    height: 10dvh;
+    width: 90%;
+    margin: 0 auto;
+    color: #B0B0B0;
+    padding: 7%;
+}
+
+#collapsebar {
+    display: none;
+    font-size: 1.8em;
+    color: #B0B0B0;
+    margin-top: 2.5dvh;
+    margin-left: 4dvh;
+}
+

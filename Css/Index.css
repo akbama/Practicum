@@ -1,0 +1,67 @@
+body {
+    margin: 0 auto;
+    background-color: #F5F5F5;
+}
+
+#logo {
+    width: 5vw;
+}
+.topRight {
+    width: 25vw;
+    height: 8vh;
+    position: fixed;
+    top: 1vw;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.topRight i{
+    font-size: 2vw;
+    color: #B0B0B0;
+}
+#name {
+    font-family: 'Montserrat';
+    font-size: 1vw;
+    margin-right: 6vw;
+}
+.icon {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.notifBell i {
+    position: relative;
+    color: #B0B0B0;
+}
+.notifBell i:hover {
+    color: #0FCC6E;
+}
+#notifNumber {
+    width: 1.2vw;
+    height: 1.2vw;
+    position: absolute;
+    top: 0.9vw;
+    right: 3.6vw;
+    background-color: #405ABA;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(64, 90, 186, 0.5);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#number {
+    font-family: 'Montserrat';
+    font-size: 0.5vw;
+    font-weight: bold;
+}
+.notifContainer {
+    display:none;
+    width: 17vw;
+    height: 30vh;
+    position: fixed;
+    top: 5vw;
+    right: 3vw;
+    background-color: white;
+    border-radius: 1.2vw;
+}

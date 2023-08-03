@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/Css/Index.css">
+    <link rel="stylesheet" type="text/css" href="/Css/Navbar.css">
+    <script src="../Js/Index.js"></script>
 </head>
 <body>
+    <div class = "topRight">
+        <div class = "icon">
+            <i class = "fa-solid fa-circle-user"></i>
+        </div>
+        <div class = "name">
+            <p id = "name">Alyanna Bama</p>
+        </div>
+        <div class = "notifBell">
+            <i class= "fa-regular fa-bell"></i>
+            <div id = "notifNumber"><p id = "number">2</p></div>
+        </div>
+    </div>
+    <div class = "notifContainer">
+        
+    </div>
+    <i id = "collapsebar" class="fa-solid fa-bars" onclick="collapse()"></i>
+    <div class = "leftBar" id = "leftBar">
+        <div id = "logoContainer">
+            <div id = "iconBox"><i class="fa-solid fa-bars" onclick="collapse()"></i></div>
+            <div id = "labelBox"><img id = "logo" src = "/Images/JSG logo.png"></div>
+        </div>
+        <div class = "navBar">
+            <a href = "#">
+            <div class = "navBox active" id = "navBox 1">
+                <div id = "iconBox"><i class="fa-solid fa-house"></i></div>
+                <div id = "labelBox"><p id = "navLabel">Dashboard</p></div>
+            </div>
+            </a>
+            <a href = "#">
+                <div class = "navBox" id = "navBox 2">
+                    <div id = "iconBox"><i class="fa-regular fa-clock"></i></div>
+                    <div id = "labelBox"><p id = "navLabel">Daily Time Record</p></div>
+                </div>
+                </a>
+            <a href = "#">
+            <div class = "navBox" id = "navBox 3">
+                <div id = "iconBox"><i class="fa-solid fa-users"></i></div>
+                <div id = "labelBox"><p id = "navLabel">Employees</p></div>
+            </div>
+            </a>
+            <a href = "#">
+                <div class = "navBox" id = "navBox 4">
+                    <div id = "iconBox"><i class="fa-solid fa-gears"></i></div>
+                    <div id = "labelBox"><p id = "navLabel">Technical Support</p></div>
+                </div>
+                </a>
+            <a href = "#">
+            <div class = "navBox" id = "navBox 5">
+                <div id = "iconBox"><i class="fa-solid fa-key"></i></div>
+                <div id = "labelBox"><p id = "navLabel">Change Password</p></div>
+            </div>
+            </a>
+        </div>
+        <a href = "../Files/LogIn.html">
+        <div class = "exitContainer">
+            <div id = "iconBox"><i class="fa-solid fa-arrow-right-from-bracket"></i></div>
+        </div>
+        </a>
+    </div>
     
 </body>
 </html>
