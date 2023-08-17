@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.innerWidth >= 768) {}
     else {
         reqContent.style.width = "100dvw";
-        console.log("hello");
     }
     
 });
