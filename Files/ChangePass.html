@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/Css/Index.css">
+    <link rel="stylesheet" type="text/css" href="/Css/Navbar.css">
+    <link rel="stylesheet" type="text/css" href="/Css/ChangePass.css">
+    <script src="../Js/Index.js"></script>
+</head>
+<body>
+    <div id = "upperBar">
+        <div class = "topRight">
+            <div class = "icon">
+                <i class = "fa-solid fa-circle-user"></i>
+            </div>
+            <div class = "name">
+                <p id = "name">Alyanna Bama</p>
+            </div>
+        </div>
+    </div>
+
+    <i id = "openBar" class="fa-solid fa-bars" onclick="openBar()"></i>
+    <div id = "leftBar">
+        <div id = "logoContainer">
+            <img id = "logo" src = "/Images/JSG logo.png">
+        </div>
+        <div class = "navBar">
+            <a href = "Dashboard.html">
+            <div class = "navBox" id = "navBox 1">
+                <div id = "iconBox"><i class="fa-solid fa-house"></i></div>
+                <div id = "labelBox"><p id = "navLabel">Dashboard</p></div>
+            </div>
+        </a>
+
+        <div class = "navBox" id = "navBox 2" onclick = "opencloseUnderNav()">
+            <div id = "iconBox"><i class="fa-regular fa-clock"></i></div>
+            <div id = "labelBox"><p id = "navLabel">Daily Time Record</p></div>
+        </div>
+            <div id = "underNav">
+                <a href = "DTR_Request.html">
+                    <div class = "navBox2">
+                        <div id = "iconBox2"></div>
+                        <div id = "labelBox2"><p id = "navLabel">Requests</p></div>
+                    </div>
+                </a>
+                <a href = "DTR_Reports.html">
+                    <div class = "navBox2">
+                        <div id = "iconBox2"></div>
+                        <div id = "labelBox2"><p id = "navLabel">Reports</p></div>
+                    </div>
+                </a>
+            </div>
+
+            <a href = "Technical Support.html">
+                <div class = "navBox" id = "navBox 4">
+                    <div id = "iconBox"><i class="fa-solid fa-gears"></i></div>
+                    <div id = "labelBox"><p id = "navLabel">Technical Support</p></div>
+                </div>
+                </a>
+            <a href = "#">
+            <div class = "navBox active" id = "navBox 5">
+                <div id = "iconBox"><i class="fa-solid fa-key"></i></div>
+                <div id = "labelBox"><p id = "navLabel">Change Password</p></div>
+            </div>
+            </a>
+        </div>
+        <a href = "../Files/LogIn.html">
+        <div class = "exitContainer">
+            <div id = "iconBox"><i class="fa-solid fa-arrow-right-from-bracket"></i></div>
+        </div>
+        </a>
+    </div>
+    <div id = "mainContent">
+        <div id = "passBox">
+            <div id = "lockBox">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <p id = "cTitle"> Change Password </p>
+            </div>
+            <table>
+                <tr>
+                    <td id = "firstp">Current Password</td>
+                    <td id = "secondp"><input type = "text"></td>
+                </tr>
+                <tr>
+                    <td id = "firstp">New Password</td>
+                    <td id = "secondp"><input type = "text"></td>
+                </tr>
+                <tr>
+                    <td id = "firstp">Re-Type Password</td>
+                    <td id = "secondp"><input type = "text"></td>
+                </tr>
+            </table>
+            <div id = "save">
+                <button id = "saveButton"> Save </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

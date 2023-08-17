@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/Css/Index.css">
+    <link rel="stylesheet" type="text/css" href="/Css/Navbar.css">
+    <link rel="stylesheet" type="text/css" href="/Css/TechnicalSupport.css">
+    <script src="../Js/Index.js"></script>
+    <script src="../Js/TechSupp.js"></script>
+</head>
+<body>
+    <div id = "upperBar">
+        <div class = "topRight">
+            <div class = "icon">
+                <i class = "fa-solid fa-circle-user"></i>
+            </div>
+            <div class = "name">
+                <p id = "name">Alyanna Bama</p>
+            </div>
+    </div>
+    <i id = "openBar" class="fa-solid fa-bars" onclick="openBar()"></i>
+    <div id = "leftBar">
+        <div id = "logoContainer">
+            <img id = "logo" src = "/Images/JSG logo.png">
+        </div>
+        <div class = "navBar">
+            <a href = "Dashboard.html">
+            <div class = "navBox" id = "navBox 1">
+                <div id = "iconBox"><i class="fa-solid fa-house"></i></div>
+                <div id = "labelBox"><p id = "navLabel">Dashboard</p></div>
+            </div>
+        </a>
+
+        <div class = "navBox" id = "navBox 2" onclick = "opencloseUnderNav()">
+            <div id = "iconBox"><i class="fa-regular fa-clock"></i></div>
+            <div id = "labelBox"><p id = "navLabel">Daily Time Record</p></div>
+        </div>
+            <div id = "underNav">
+                <a href = "DTR_Request.html">
+                    <div class = "navBox2">
+                        <div id = "iconBox2"></div>
+                        <div id = "labelBox2"><p id = "navLabel">Requests</p></div>
+                    </div>
+                </a>
+                <a href = "DTR_Reports.html">
+                    <div class = "navBox2">
+                        <div id = "iconBox2"></div>
+                        <div id = "labelBox2"><p id = "navLabel">Reports</p></div>
+                    </div>
+                </a>
+            </div>
+
+            <a href = "#">
+                <div class = "navBox active" id = "navBox 4">
+                    <div id = "iconBox"><i class="fa-solid fa-gears"></i></div>
+                    <div id = "labelBox"><p id = "navLabel">Technical Support</p></div>
+                </div>
+                </a>
+            <a href = "ChangePass.html">
+            <div class = "navBox" id = "navBox 5">
+                <div id = "iconBox"><i class="fa-solid fa-key"></i></div>
+                <div id = "labelBox"><p id = "navLabel">Change Password</p></div>
+            </div>
+            </a>
+        </div>
+        <a href = "../Files/LogIn.html">
+        <div class = "exitContainer">
+            <div id = "iconBox"><i class="fa-solid fa-arrow-right-from-bracket"></i></div>
+        </div>
+        </a>
+    </div>
+    <div id = "mainContent">
+        <div id = "filterContent">
+            <div id = "filterDate">
+                <label> Date from </label> <input type = "date"> to <input type = "date">
+            </div>
+            <div id = "statusSearch">
+                <label for="filterInput">Status: </label>
+                    <select id="fruitSelect">
+                        <option value="apple">Request</option>
+                        <option value="banana">Completed</option>
+                        <option value="cherry">Acknowledged</option>
+                    </select>
+            </div>
+            <div id = "search">
+                <button id = "searchButton"> Search </button>
+            </div>
+        </div>
+
+        <div class = "resultsContent con1 com rep">
+            <div class = "results con1">
+                <div id = "resultsHeader">
+                    <div id = "id">ID: <span id = "imp">13144</span></div>
+                    <div id = "posted">Posted: <span id = "imp">Aug. 10, 2023</span></div>
+                    <div id = "by">By: <span id = "imp">CALZADO, ANGELICA ORDIZ</span></div>
+                    <div id = "status">Status: <span id = "imp">Completed</span></div>
+                </div>
+                <div id ="resultsBody">
+                    <div id = "details">
+                        <p>
+                            Good morning Miss Lir pa tag palihog po. <br>
+                            1. REPORIN, PAMELA JEAN - BC# 20786581 (MABINI) <br>                         
+                            2. JANDAYAN, JENALYN - BC# 50580620 (ASUNCION CARAVAN) <br> <br>
+                            
+                            Thank you.
+                        </p>
+                    </div>
+                </div>
+                <div id = "resultsFooter">
+                    <i class="fa-solid fa-message" onclick = "opencloseMessage('con1')"></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-solid fa-reply"></i>
+                </div>
+            </div>
+        </div>
+        <div class = "resultsContent messageBox con1">
+            <div class = "results con1">
+                <div id = "resultsHeader">
+                    <div id = "posted">Date: <span id = "imp">Aug. 10, 2023</span></div>
+                    <div id = "by">Replied by: <span id = "imp">LIRIO ANTONETTE B. GALURA</span></div>
+                </div>
+                <div id ="resultsBody">
+                    <div id = "details">
+                        <p>
+                            please check villarosa, wala po ito
+                        </p>
+                    </div>
+                </div>
+                <div id = "resultsHeader">
+                    <div id = "posted">Date: <span id = "imp">Aug. 10, 2023</span></div>
+                    <div id = "by">Replied by: <span id = "imp">LIRIO ANTONETTE B. GALURA</span></div>
+                </div>
+                <div id ="resultsBody">
+                    <div id = "details">
+                        <p>
+                            for checking
+                        </p>
+                    </div>
+                </div>
+                <div id = "resultsHeader">
+                    <div id = "posted">Date: <span id = "imp">Aug. 10, 2023</span></div>
+                    <div id = "by">Replied by: <span id = "imp">LIRIO ANTONETTE B. GALURA</span></div>
+                </div>
+                <div id ="resultsBody">
+                    <div id = "details">
+                        <p>
+                            mausisa and yuson - tapos na cutoff ; no edit napo dito. edit should be before or within  cutoff. <br> 
+                            picot- is this aug 8? pasabot sa cutoff 8? <br>
+                            lahoy - aug 13? aug 10 pa po today? is this correct
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "resultsContent con2 req rep">
+            <div class = "results con1">
+                <div id = "resultsHeader">
+                    <div id = "id">ID: <span id = "imp">13184</span></div>
+                    <div id = "posted">Posted: <span id = "imp">Aug. 10, 2023</span></div>
+                    <div id = "by">By: <span id = "imp">SANCHEZ, JOCELYN</span></div>
+                    <div id = "status">Status: <span id = "imp">Request</span></div>
+                </div>
+                <div id ="resultsBody">
+                    <div id = "details">
+                        <p>
+                            good afternoon ms ler.. please ko sa L-124 (no srp) L-125 (invalid macadrress) thank you
+                        </p>
+                    </div>
+                </div>
+                <div id = "resultsFooter">
+                    <i class="fa-solid fa-message" onclick = "opencloseMessage('con2')"></i>
+                    <i class="fa-solid fa-paperclip" onclick = "openAttach('con2')"></i>
+                    <i class="fa-solid fa-reply" onclick = "openReply('con2')"></i>
+                </div>
+            </div>
+        </div>
+        <div class = "resultsContent attach con2">
+            <div id = "resultsHeader">
+                <div id = "id">ID: <span id = "imp">13184</span></div>
+                <div id = "posted">Posted: <span id = "imp">Aug. 10, 2023</span></div>
+            </div>
+            <div id = "resultsUploadFooter">
+                <button><i class="fa-solid fa-plus"></i> Add Files</button>
+                <button><i class="fa-solid fa-circle-right"></i> Start upload</button>
+                <button><i class="fa-solid fa-ban"></i> Cancel Upload</button>
+                <button><i class="fa-solid fa-trash"></i> Delete Files</button>
+            </div>
+        </div>
+        <div class = "resultsContent reply con2">
+            <div id = "resultsHeader">
+                <div id = "id">ID: <span id = "imp">13184</span></div>
+                <div id = "posted">Posted: <span id = "imp">Aug. 10, 2023</span></div>
+            </div> <br>
+            Reply 
+            <input type = "text">
+            <div id = "resultsReplyFooter">
+                <button>Save</button>
+                <button>Cancel</button>
+            </div>
+        </div>
+        <div class = "resultsContent messageBox con2">
+            <div class = "results con1">
+                <div id = "resultsHeader">
+                    <div id = "posted">Date: <span id = "imp">Aug. 10, 2023</span></div>
+                    <div id = "by">Replied by: <span id = "imp">LIRIO ANTONETTE B. GALURA</span></div>
+                </div>
+                <div id ="resultsBody">
+                    <div id = "details">
+                        <p>
+                            please check villarosa, wala po ito
+                        </p>
+                    </div>
+                </div>
+                <div id = "resultsHeader">
+                    <div id = "posted">Date: <span id = "imp">Aug. 10, 2023</span></div>
+                    <div id = "by">Replied by: <span id = "imp">LIRIO ANTONETTE B. GALURA</span></div>
+                </div>
+                <div id ="resultsBody">
+                    <div id = "details">
+                        <p>
+                            for checking
+                        </p>
+                    </div>
+                </div>
+                <div id = "resultsHeader">
+                    <div id = "posted">Date: <span id = "imp">Aug. 10, 2023</span></div>
+                    <div id = "by">Replied by: <span id = "imp">LIRIO ANTONETTE B. GALURA</span></div>
+                </div>
+                <div id ="resultsBody">
+                    <div id = "details">
+                        <p>
+                            mausisa and yuson - tapos na cutoff ; no edit napo dito. edit should be before or within  cutoff. <br> 
+                            picot- is this aug 8? pasabot sa cutoff 8? <br>
+                            lahoy - aug 13? aug 10 pa po today? is this correct
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "resultsContent con3 com norep">
+            <div class = "results con1">
+                <div id = "resultsHeader">
+                    <div id = "id">ID: <span id = "imp">13124</span></div>
+                    <div id = "posted">Posted: <span id = "imp">Aug. 10, 2023</span></div>
+                    <div id = "by">By: <span id = "imp">CALZADO, ANGELICA ORDIZ</span></div>
+                    <div id = "status">Status: <span id = "imp">Completed</span></div>
+                </div>
+                <div id ="resultsBody">
+                    <div id = "details">
+                        <p>
+                            Good afternoon Miss Lir pa tag palihog sa Asuncion Caravan <br>
+                            1. COSTILLAS, RUEL - BC# 70046540 <br>
+                            2. LAGUITAO, CHRISTIAN - BC# 50577804 <br>
+                            3. PAJARON, KENT LOWELL - BC# 70048063 <br>                            
+                            4. TROMPETA, RUSTY - BC# 70046854 <br> <br>
+                            Thank you.
+                        </p>
+                    </div>
+                </div>
+                <div id = "resultsFooter">
+                    <i class="fa-solid fa-message" ></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-solid fa-reply"></i>
+                </div>
+            </div>
+        </div>
+        <div class = "resultsContent con4 ack norep">
+            <div class = "results con1">
+                <div id = "resultsHeader">
+                    <div id = "id">ID: <span id = "imp">13114</span></div>
+                    <div id = "posted">Posted: <span id = "imp">Aug. 09, 2023</span></div>
+                    <div id = "by">By: <span id = "imp">BAYONGON, GIRLY MADULIN</span></div>
+                    <div id = "status">Status: <span id = "imp">Acknowledged</span></div>
+                </div>
+                <div id ="resultsBody">
+                    <div id = "details">
+                        <p>
+                            Good Afternoon Ma'am , magparevert ko ani nga <span id = "highlight">APV#TGSM034876AN, TGSM034884AN, TGSM034904AN ,  TGSM034923AN, TGSM034926AN,  K2SM004863AN , TGSM034929AN , TGSM034930AN , TGSM034932AN ,  TGSM034933AN , TGSM034937AN , K2SM004837AN, K2SM004836AN , TGSM034926AN,  MWSM012896AN , PNSM020071AN , MWSM012880AN , PNSM020058AN ,  TGSM034812AN , TGSM034811AN ,  TGSM034560AN , K2SM004836AN, K2SM004837AN, K2SM004838AN, K2SM004839AN, K2SM004840AN, PNSM020049AN, PNSM020050AN, PNSM020051AN, PNSM020052AN, PNSM020053AN, PNSM020054AN, TGSM034812AN, K2SM004756AN, PNSM020058AN, MWSM012880AN, K2SM004769AN, PNSM020063AN, PNSM020064AN, PNSM020065AN, TGSM034879AN, TGSM034880AN, TGSM034882AN, TGSM034883AN, TGSM034906AN, TGSM034802AN, K2SM004761AN, K2SM004763AN, K2SM004763AN, TGSM034804AN, TGSM034805AN, TGSM034806AN, TGSM034807AN, TGSM034808AN, PNSM020077AN, MWSM012918AN, MWSM012919AN, MWSM012920AN, PNSM020078AN, PNSM020079AN, TGSM034799AN, TGSM034800AN, MWSM012876AN, MWSM012875AN, K2SM004831AN, TGSM034851AN, TGSM034889AN, TGSM034892AN, PNSM020070AN, PNSM020071AN, PNSM020072AN, PNSM020075AN, MWSM012896AN., MWSM012898AN,  TGSM034923AN, MWSM012866AN,  TGSM034898AN,  TGSM034899AN, TGSM034900AN, MWSM012890AN, K2SM004855AN, TGSM034803AN, MWSM012877AN,  TGSM034841AN, MWSM012915AN,  TGSM034897AN, K2SM004818AN, TGSM034794AN, TGSM034796AN, TGSM034797AN, TGSM034875AN, K2SM004845AN, K2SM004767AN, & K2SM004766AN </span>
+                            <br> <br>
+                            for SLSP VAT adjustment. Thank You
+                        </p>
+                    </div>
+                </div>
+                <div id = "resultsFooter">
+                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-solid fa-reply"></i>
+                </div>
+            </div>
+        </div>
+        <div class = "resultsContent con5 ack norep">
+            <div class = "results con1">
+                <div id = "resultsHeader">
+                    <div id = "id">ID: <span id = "imp">13104</span></div>
+                    <div id = "posted">Posted: <span id = "imp">Aug. 09, 2023</span></div>
+                    <div id = "by">By: <span id = "imp">PAQUINOL, JESA MAE DEGAMO</span></div>
+                    <div id = "status">Status: <span id = "imp">Acknowledged</span></div>
+                </div>
+                <div id ="resultsBody">
+                    <div id = "details">
+                        <p>
+                            Hello Ma'am good day, pls. REVERT APV-EXPENSE:     TGEX012251AN   ,      PNEX002964AN thank you po. 
+                        </p>
+                    </div>
+                </div>
+                <div id = "resultsFooter">
+                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-solid fa-reply"></i>
+                </div>
+            </div>
+        </div>
+        <div class = "resultsContent con6 com norep">
+            <div class = "results con1">
+                <div id = "resultsHeader">
+                    <div id = "id">ID: <span id = "imp">13074</span></div>
+                    <div id = "posted">Posted: <span id = "imp">Aug. 09, 2023</span></div>
+                    <div id = "by">By: <span id = "imp">CALZADO, ANGELICA ORDIZ</span></div>
+                    <div id = "status">Status: <span id = "imp">Completed</span></div>
+                </div>
+                <div id ="resultsBody">
+                    <div id = "details">
+                        <p>
+                            Good morning pa tag sa Sto Tomas and Kapalong po <br>
+                            1. CALZADO, ANGELICA - BC# 70050745 <br> 
+                            2. LABASTIDA, RICHGLORY - BC# 20786580 <br> 
+                            3. MACAPILI, EMER JANE - BC# 20786614 <br> 
+                            4. REPORIN, PAMELA JEAN - BC# 20786581 <br>
+                            5. TEMPLADO, APRIL KAREN - BC# 20789381 <br> <br>
+                            Thank you.
+                        </p>
+                    </div>
+                </div>
+                <div id = "resultsFooter">
+                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-paperclip"></i>
+                    <i class="fa-solid fa-reply"></i>
+                </div>
+            </div>
+        </div>
+        <div class = "resultsContent con7 req rep">
+            <div class = "results con1">
+                <div id = "resultsHeader">
+                    <div id = "id">ID: <span id = "imp">13184</span></div>
+                    <div id = "posted">Posted: <span id = "imp">Aug. 10, 2023</span></div>
+                    <div id = "by">By: <span id = "imp">SANCHEZ, JOCELYN</span></div>
+                    <div id = "status">Status: <span id = "imp">Request</span></div>
+                </div>
+                <div id ="resultsBody">
+                    <div id = "details">
+                        <p>
+                            Good afternoon mam. Pwede ko pa locate sa swiping F4 ni JANDAYAN #50580620 gahapon Aug 16,2023 wala daw nag saka sa ASUNCION po na bio. thanks
+                        </p>
+                    </div>
+                </div>
+                <div id = "resultsFooter">
+                    <i class="fa-solid fa-message" onclick = "opencloseMessage('con7')"></i>
+                    <i class="fa-solid fa-paperclip" onclick = "openAttach('con7')"></i>
+                    <i class="fa-solid fa-reply" onclick = "openReply('con7')"></i>
+                </div>
+            </div>
+        </div>
+        <div class = "resultsContent attach con7">
+            <div id = "resultsHeader">
+                <div id = "id">ID: <span id = "imp">13184</span></div>
+                <div id = "posted">Posted: <span id = "imp">Aug. 10, 2023</span></div>
+            </div>
+            <div id = "resultsUploadFooter">
+                <button><i class="fa-solid fa-plus"></i> Add Files</button>
+                <button><i class="fa-solid fa-circle-right"></i> Start upload</button>
+                <button><i class="fa-solid fa-ban"></i> Cancel Upload</button>
+                <button><i class="fa-solid fa-trash"></i> Delete Files</button>
+            </div>
+        </div>
+        <div class = "resultsContent reply con7">
+            <div id = "resultsHeader">
+                <div id = "id">ID: <span id = "imp">13184</span></div>
+                <div id = "posted">Posted: <span id = "imp">Aug. 10, 2023</span></div>
+            </div> <br>
+            Reply 
+            <input type = "text">
+            <div id = "resultsReplyFooter">
+                <button>Save</button>
+                <button>Cancel</button>
+            </div>
+        </div>
+        <div class = "resultsContent messageBox con7">
+            <div class = "results con1">
+                <div id = "resultsHeader">
+                    <div id = "posted">Date: <span id = "imp">Aug. 16, 2023</span></div>
+                    <div id = "by">Replied by: <span id = "imp">LIRIO ANTONETTE B. GALURA</span></div>
+                </div>
+                <div id ="resultsBody">
+                    <div id = "details">
+                        <p>
+                            offline po ang asuncion
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+#filterContent {
+    width: 90%;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0vw 2vw 10vw rgb(3,3,3,0.1);
+    border-radius: 1em;
+    margin-bottom: 5dvh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#mainContent {
+    overflow-y: auto;
+    font-size: 14px;
+}
+.resultsContent {
+    box-sizing: border-box;
+    width: 90%;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0vw 2vw 10vw rgb(3,3,3,0.1);
+    border-radius: 1em;
+    height: auto;
+    padding: 10px;
+    overflow-x: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2%;
+}
+#resultsHeader {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+}
+
+#imp {
+    font-weight: bold;
+}
+.com {
+    background-color: #F9B315;
+}
+.req {
+    background-color: #F29E8C;
+}
+.ack {
+    background-color: #77F7AA;
+}
+#highlight {
+    color: #FF00FF;
+}
+#resultsFooter {
+    height: auto;
+    text-align: right;
+}
+#resultsFooter i {
+    font-size: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+#details {
+    font-family: 'Montserrat';
+}
+.fa-paperclip, .fa-reply {
+    color: #e5e5e5b5;
+    opacity: 1;
+}
+.req .fa-paperclip, .req .fa-reply, .norep .fa-message {
+    color: black;
+}
+.rep .fa-message{
+    color: #00A885;
+}
+
+.rep .message {
+    background-color: #C9F699;
+}
+.messageBox {
+    display: none;
+}
+#resultsUploadFooter {
+    height: auto;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+button {
+    width: 20%;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 0.5em;
+    border: none;
+    padding: 5px;
+    background-color: #D4D4D4;
+}
+input[type="text"] {
+    width: 100%;
+    height: 10dvh;
+}
+
+#resultsReplyFooter {
+    height: auto;
+    text-align: right;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.attach, .reply {
+    display: none;
+}
+
+#filterDate, #statusSearch, #search {
+    box-sizing: border-box;
+    height: 5dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#filterDate {
+    width: 50%;
+}
+#statusSearch {
+    width: 30%;
+}
+input, select, #searchButton {
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    border-radius: 1em;
+    border: none;
+    height: 4dvh;
+    font-family: Montserrat;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#search {
+    width: 20%;
+    padding-left: 0;
+}
+#searchButton {
+    width: 70%;
+    background-color: #00A885;
+}
+#filterDate input{
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    #mainContent {
+        width: 100dvw;
+    }
+    #id,#posted {
+        width: 50%;
+    }
+    #by, #status {
+        width: 100%;
+    }
+    #filterDate, #statusSearch, #search {
+        width: 100%;
+        height: 5dvh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #filterDate input{
+        width: 40%;
+    }
+}

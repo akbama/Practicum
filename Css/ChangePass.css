@@ -1,0 +1,87 @@
+#passBox {
+    box-sizing: border-box;
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    margin:0 auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 1em;
+    box-shadow: 0vw 2vw 10vw rgb(3,3,3,0.1);
+}
+#lockBox {
+    width: 100%;
+    height: 30%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+}
+td {
+    box-sizing: border-box;
+}
+.fa-lock {
+    font-size: 50px;
+}
+#cTitle {
+    font-weight: bold;
+    margin-left: 2dvw;
+    font-size: 20px;
+}
+input {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #F2F2F2;
+    border-radius: 1em;
+    border: none;
+    height: 5dvh;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+#firstp {
+    width: 40%;
+}
+#secondp {
+    width: 60%;
+}
+#mainContent {
+    display: flex;
+    justify-content: center;
+}
+#save {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#saveButton {
+    width: 30%;
+    background-color: #00A784;
+    height: 50%;
+    border-radius: 1em;
+    border: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Montserrat';
+}
+@media (max-width: 768px) {
+    #passBox {
+        box-sizing: border-box;
+        width: 90%;
+        background-color: white;
+    }
+    #mainContent {
+        width: 100dvw;
+    }
+    table {
+        height: 40%;
+    }
+}

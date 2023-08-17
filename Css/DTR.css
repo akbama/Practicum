@@ -1,0 +1,334 @@
+#rightSide {
+    width: calc(100% - 250px);
+    height: 100dvh;
+    box-sizing: border-box;
+    right: 10px;
+    transition: width 0.4s ease;
+    display: flex;
+    float:right;
+}
+
+#reqContent {
+    box-sizing: border-box;
+    width: calc(100% - 180px);
+    margin-top: 18dvh;
+    height: 90dvh;
+    float: right;
+    padding-left: 4dvw;
+    padding-right: 4dvw;
+}
+
+#menuBar {
+    width: 180px;
+    height: 100dvh;
+    float: left;
+    border-right: 3px solid #E3E4E3;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: width 0.4s ease;
+}
+#menu {
+    width: 100%;
+    height: 70dvh;
+}
+#menuTitle {
+    padding: 10px;
+    border-bottom: 3px solid #E3E4E3;
+}
+.req {
+    list-style: none;
+    padding: 0;
+}
+
+#menuList {
+    width: 100%;
+    padding-top: 2dvh;
+}
+
+.select {
+    width: 70%;
+    height: 10%;
+    padding-left: 1dvw;
+    padding-top: 1dvh;
+    padding-bottom: 1dvh;
+    margin: 0 auto;
+    font-size: 0.8em;
+    border-bottom: 2px solid #E3E4E3;;
+}
+
+.select:hover {
+    background-color: #DCF0EA;
+    border-radius: 0.5em;
+}
+
+.select.active {
+    color: #00A885;
+}
+#leaveReq {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#reqTitle {
+    height: 10%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.searchBox {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 0vw 2vw 10vw rgb(3,3,3,0.1);
+    margin: 0 auto;
+    margin-bottom: 5dvh;
+}
+
+.resultsBox {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 0vw 2vw 10vw rgb(3,3,3,0.1);
+    overflow-y: auto;
+}
+
+#clearListReq {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#uniformExReq {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+form {
+    height: 100%;
+}
+#reqSearch {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#part1 {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+#part2 {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+#ename, #dateLength {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+} 
+#ename {
+    padding-bottom: 2%;
+}
+#dateLength {
+    scroll-padding-top: 2%;
+}
+#namePart,#datePart {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    text-align: center;
+}
+#namePart {
+    align-self: self-end;
+}
+#datePart {
+    align-self: self-start;
+}
+#enameLabel, #dateLabel {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#enameInput {
+    width: 60%;
+    display: flex;
+}
+#dateInput {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+label {
+    font-size: 15px;
+}
+
+input, button, select {
+    background-color: #F2F2F2;
+    border-radius: 1em;
+    border: none;
+    height: 5dvh;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+input, select {
+    padding-left: 5%;
+    font-family: Montserrat;
+}
+input:focus {
+    outline: none;
+}
+select {
+    width: 100%;
+}
+input[type="text"] {
+    width: 100%;
+}
+input[type="date"] {
+    width: 40%;
+}
+#to {
+    width: 20%;
+    text-align: center;
+}
+
+#openReq, #closeReq {
+    display: none;
+}
+#typeDiv, #buttons {
+    box-sizing: border-box;
+    height: 50%;
+    width: 100%;
+}
+#buttons {
+    width: 100%;
+    height: 50%;
+}
+#typeDiv {
+    padding-bottom: 2%;
+}
+#typeLabel, #selSize {
+    height: 70%;
+    align-self: self-end;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#selSize {
+    width: 100%;
+}
+#selOp {
+    width: 60%;
+}
+#ltype, #selOp  {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+button {
+    width: 40%;
+}
+#submit {
+    background-color: #00A885;
+    height: 60%;
+}
+#clear {
+    background-color: #F9B315;
+    height: 60%;
+}
+
+table {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    padding: 2%;
+}
+th {
+    background-color: #00A885;
+    border-radius: 1em;
+}
+tr {
+    text-align: center;   
+}
+td {
+    height: 5dvh;
+    font-size: 14px;
+}
+#check {
+    background-color: #00A885;
+    color: white;
+}
+#x {
+    background-color: #F44336;
+    color: white;
+}
+@media (max-width: 768px) {
+    #rightSide {
+        width: 100dvw;
+    }
+    input {
+        height: 100%;
+        width: 100%;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+    #openReq,#closeReq {
+        float: left;
+        font-size: 1.5em;
+        color: #B0B0B0;
+        margin-left: 3dvw;
+        margin-top: 10dvw;
+        position: fixed;
+    }
+    #openReq {
+        display: none;
+    }
+    #closeReq {
+        display: block;
+    }
+    button {
+        width: 40%;
+        height: 100%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .searchBox {
+        box-sizing: border-box;
+        padding: 1%;
+    }
+    #reqSearch {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        height: 100%;
+    }
+    #part1, #part2 {
+        width: 100%;
+        height: 50%;
+    }
+}

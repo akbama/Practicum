@@ -29,9 +29,14 @@
             </div>
             <p id = "forgetp">Forget password?</p>
             <div class="input-wrapper">
-                <input type="submit" value="Login">
+                <a href = "Dashboard.html"><input type="submit" value="Login" id = "loginButton"></a>
             </div>
         </form>
     </div>
+    <script>
+        document.getElementById('loginButton').addEventListener('click', function() {
+            window.location.href = 'Dashboard.html';
+        });
+    </script>
 </body>
 </html>

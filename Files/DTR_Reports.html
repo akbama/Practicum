@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="/Css/Index.css">
+    <link rel="stylesheet" type="text/css" href="/Css/Navbar.css">
+    <link rel="stylesheet" type="text/css" href="/Css/DTR.css">
+    <script src="../Js/DTR.js"></script>
+</head>
+<body>
+    <!--TopBar-->
+    <div id = "upperBar">
+        <div class = "topRight">
+            <div class = "icon">
+                <i class = "fa-solid fa-circle-user"></i>
+            </div>
+            <div class = "name">
+                <p id = "name">Alyanna Bama</p>
+            </div>
+        </div>
+    </div>
+    <!--Open and close the navigation bar-->
+    <i id = "openBar" class="fa-solid fa-bars" onclick="openBar()"></i>
+    <i id = "openReq" class="fa fa-arrow-right" onclick="openReq()"></i>
+    <i id = "closeReq" class="fa fa-arrow-left" onclick="closeReq()"></i>
+    <!--Navigation Bar-->
+    <div id = "leftBar">
+        <div id = "logoContainer">
+            <img id = "logo" src = "/Images/JSG logo.png">
+        </div>
+        <div class = "navBar">
+            <a href = "Dashboard.html">
+            <div class = "navBox" id = "navBox 1">
+                <div id = "iconBox"><i class="fa-solid fa-house"></i></div>
+                <div id = "labelBox"><p id = "navLabel">Dashboard</p></div>
+            </div>
+        </a>
+
+        <div class = "navBox active" id = "navBox 2" onclick = "opencloseUnderNav()">
+            <div id = "iconBox"><i class="fa-regular fa-clock"></i></div>
+            <div id = "labelBox"><p id = "navLabel">Daily Time Record</p></div>
+        </div>
+            <div id = "underNav">
+                <a href = "DTR_Request.html">
+                    <div class = "navBox2">
+                        <div id = "iconBox2"></div>
+                        <div id = "labelBox2"><p id = "navLabel">Requests</p></div>
+                    </div>
+                </a>
+                <a href = "#">
+                    <div class = "navBox2 active">
+                        <div id = "iconBox2"></div>
+                        <div id = "labelBox2"><p id = "navLabel">Reports</p></div>
+                    </div>
+                </a>
+            </div>
+            
+            <a href = "Technical Support.html">
+                <div class = "navBox" id = "navBox 4">
+                    <div id = "iconBox"><i class="fa-solid fa-gears"></i></div>
+                    <div id = "labelBox"><p id = "navLabel">Technical Support</p></div>
+                </div>
+                </a>
+            <a href = "ChangePass.html">
+            <div class = "navBox" id = "navBox 5">
+                <div id = "iconBox"><i class="fa-solid fa-key"></i></div>
+                <div id = "labelBox"><p id = "navLabel">Change Password</p></div>
+            </div>
+            </a>
+        </div>
+        <a href = "../Files/LogIn.html">
+        <div class = "exitContainer">
+            <div id = "iconBox"><i class="fa-solid fa-arrow-right-from-bracket"></i></div>
+        </div>
+        </a>
+    </div>
+    <!--Navigate the reports menu bar-->
+    <div id = "rightSide">
+        <div id = "menuBar">
+            <div id = "menu">
+                <div id = "menuTitle">Reports</div>
+                <div class="req">
+                    <div id = "menuList">
+                      <div class = "select op1 active" onclick = "select(1)">DTR Monitoring</div>
+                      <div class = "select op2" onclick = "select(2)">Shifting Schedule</div>
+                      <div class = "select op3" onclick = "select(3)">DTT Request Status</div>
+                    </div>
+                  </div>                  
+            </div>
+        </div>
+        <div id = "reqContent">
+            <!--DTR Monitoring-->
+            <div id = "leaveReq">
+                <p id = "reqTitle">DTR Monitoring</p>
+                <div class = "searchBox 1">
+                    <form>
+                        <div id = "reqSearch">
+                            <div id = "part1">
+                                <div id = "ename">
+                                    <div id = "namePart">
+                                        <div id = "enameLabel">
+                                            <label for="filterInput">Employee's Name:</label>
+                                        </div>
+                                        <div id = "enameInput">
+                                            <input type="text" id="filterInput">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id = "dateLength">
+                                    <div id = "datePart">
+                                        <div id = "dateLabel">
+                                            <label for="filterInput">Date:</label>
+                                        </div>
+                                        <div id = "dateInput">
+                                            <input type="date" id="from"> <span id = "to">to</span><input type="date" id="todate">
+                                        </div>
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div id = "part2">
+                                <div id = "typeDiv">
+                                    <div id = "ltype">
+                                        <div id = "typeLabel">
+                                            <label for="filterInput">Leave Type: </label>
+                                        </div>
+                                        <div id = "selOp">
+                                            <div id = "selSize">
+                                                <select id="fruitSelect">
+                                                    <option value="apple">All</option>
+                                                    <option value="banana">Sick Leave</option>
+                                                    <option value="cherry">Vacation Leave</option>
+                                                    <option value="grape">Birthday Leave</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>                    
+                                </div>
+                                <div id = "buttons">
+                                    <button id = "submit">Search</button>
+                                    <button id = "clear">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class = "resultsBox 1">
+                    <table>
+                        <tr>
+                            <th>#</th>
+                            <th>ID</th>
+                            <th>Date</th>
+                            <th>Employee</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--Shifting Schedule-->
+            <div id = "clearListReq">
+                <p id = "reqTitle">Shifting Schedule</p>
+                <div class = "searchBox 2">
+                    <form>
+                        <div id = "reqSearch">
+                            <div id = "part1">
+                                <div id = "ename">
+                                    <div id = "namePart">
+                                        <div id = "enameLabel">
+                                            <label for="filterInput">Employee's Name:</label>
+                                        </div>
+                                        <div id = "enameInput">
+                                            <input type="text" id="filterInput">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id = "dateLength">
+                                    <div id = "datePart">
+                                        <div id = "dateLabel">
+                                            <label for="filterInput">Date:</label>
+                                        </div>
+                                        <div id = "dateInput">
+                                            <input type="date" id="from"> <span id = "to">to</span><input type="date" id="todate">
+                                        </div>
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div id = "part2">
+                                <div id = "typeDiv">
+                                    <div id = "ltype">
+                                        <div id = "typeLabel">
+                                            <label for="filterInput">Status: </label>
+                                        </div>
+                                        <div id = "selOp">
+                                            <div id = "selSize">
+                                                <select id="fruitSelect">
+                                                    <option value="apple">Request</option>
+                                                    <option value="banana">Confirmed</option>
+                                                    <option value="cherry">Verified</option>
+                                                    <option value="grape">Approved</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>                    
+                                </div>
+                                <div id = "buttons">
+                                    <button id = "submit">Search</button>
+                                    <button id = "clear">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class = "resultsBox 2">
+                    <table>
+                        <tr>
+                            <th>#</th>
+                            <th>ID</th>
+                            <th>Date</th>
+                            <th>Employee</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!--DTT Request Status-->
+            <div id = "uniformExReq">
+                <p id = "reqTitle">DTT Request Status</p>
+                <div class = "searchBox 3">
+                    <form>
+                        <div id = "reqSearch">
+                            <div id = "part1">
+                                <div id = "ename">
+                                    <div id = "namePart">
+                                        <div id = "enameLabel">
+                                            <label for="filterInput">Employee's Name:</label>
+                                        </div>
+                                        <div id = "enameInput">
+                                            <input type="text" id="filterInput">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id = "dateLength">
+                                    <div id = "datePart">
+                                        <div id = "dateLabel">
+                                            <label for="filterInput">Date:</label>
+                                        </div>
+                                        <div id = "dateInput">
+                                            <input type="date" id="from"> <span id = "to">to</span><input type="date" id="todate">
+                                        </div>
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div id = "part2">
+                                <div id = "typeDiv">
+                                                       
+                                </div>
+                                <div id = "buttons">
+                                    <button id = "submit">Search</button>
+                                    <button id = "clear">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class = "resultsBox 3">
+                    <table>
+                        <tr>
+                            <th>#</th>
+                            <th>ID</th>
+                            <th>Date</th>
+                            <th>Employee</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>123</td>
+                            <td>July 31, 2023</td>
+                            <td>Juan de la Cruz</td>
+                            <td>Approved</td>
+                            <td>
+                                <button id = "check"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                <button id = "x"><i class="fa-solid fa-xmark"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
